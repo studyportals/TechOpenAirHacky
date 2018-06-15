@@ -1,8 +1,4 @@
-module.exports = [  
-   "ae1.nordvpn.com",
-   "ae2.nordvpn.com",
-   "ae3.nordvpn.com",
-   "ae4.nordvpn.com",
+module.exports = [ 
    "al1.nordvpn.com",
    "al2.nordvpn.com",
    "al3.nordvpn.com",

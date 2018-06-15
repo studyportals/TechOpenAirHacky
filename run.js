@@ -5,15 +5,20 @@ let requestP = require('request-promise');
 let fs = require('fs');
 let proxies = require('./proxies');
 let credentials = require('./credentials/proxyCredentials');
-
 let $;
 
+//Shuffle the proxies
+proxies = shuffleArray(proxies);
+
 //The id you need to change to get upvotes 
+
 let spId = 21544;
+//some random things to put in the header
+
 let someFunnyHeader = 'Studyportals Engineers 4 life';
 let githubUrl = 'https://github.com/studyportals/TechOpenAirHacky';
-
 //some variables of Tech open Air
+
 let dt50Url = 'http://toa.berlin/dt50/#';
 let dt50PostUrl = 'http://toa.berlin/wp-admin/admin-ajax.php';
 
@@ -22,7 +27,7 @@ const treshhold = 200;
 
 //how many proxyservers do you want?
 //const amountOfProxies = proxies.length;
-const amountOfProxies = 5;
+const amountOfProxies = 3;
 
 loopThroughProxies();
 
@@ -217,4 +222,15 @@ function haveWeVoted(studyportalsContainer) {
 function doWeNeedToVote(spVotes, topCompeditorVotes) {
 
     return (spVotes - topCompeditorVotes) < treshhold;
+}
+
+// fully random by github guy,, or girl.. i dont know choose one
+function shuffleArray(arrayToShuffle){
+
+    arrayToShuffle = arrayToShuffle
+        .map(a => [Math.random(), a])
+        .sort((a, b) => a[0] - b[0])
+        .map(a => a[1]);
+
+    return arrayToShuffle;
 }
