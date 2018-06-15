@@ -1,3 +1,7 @@
+/*
+This file is made to get some upvotes for your company
+Feel free to use it to get some upvotes and pop open some champagne when you win!
+*/
 let request = require("request");
 let openUrl = require("openurl");
 const cheerio = require('cheerio');
@@ -7,27 +11,23 @@ let proxies = require('./proxies');
 let credentials = require('./credentials/proxyCredentials');
 let $;
 
+//The id you need to change to get upvotes 
+let spId = 21544;
+//the amout of votes you want te be ahead of your contesters. 
+const treshold = 200;
+//how many proxyservers do you want?
+//const amountOfProxies = proxies.length;
+const amountOfProxies = 3;
+
 //Shuffle the proxies
 proxies = shuffleArray(proxies);
-
-//The id you need to change to get upvotes 
-
-let spId = 21544;
 //some random things to put in the header
-
 let someFunnyHeader = 'Studyportals Engineers 4 life';
 let githubUrl = 'https://github.com/studyportals/TechOpenAirHacky';
 //some variables of Tech open Air
 
 let dt50Url = 'http://toa.berlin/dt50/#';
 let dt50PostUrl = 'http://toa.berlin/wp-admin/admin-ajax.php';
-
-//the amout of votes you want te be ahead of your contesters. 
-const treshhold = 200;
-
-//how many proxyservers do you want?
-//const amountOfProxies = proxies.length;
-const amountOfProxies = 3;
 
 loopThroughProxies();
 
@@ -221,7 +221,7 @@ function haveWeVoted(studyportalsContainer) {
 
 function doWeNeedToVote(spVotes, topCompeditorVotes) {
 
-    return (spVotes - topCompeditorVotes) < treshhold;
+    return (spVotes - topCompeditorVotes) < treshold;
 }
 
 // fully random by github guy,, or girl.. i dont know choose one
