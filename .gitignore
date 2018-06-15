@@ -8,6 +8,7 @@
 /bash.exe.stackdump
 /Config.json
 
+/htmldump
 /credentials
 /Core/Data/Config/General.xml
 /Core/Data/Cache
