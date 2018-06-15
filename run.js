@@ -17,13 +17,15 @@ let spId = 21544;
 const treshold = 200;
 //how many proxyservers do you want?
 //const amountOfProxies = proxies.length;
-const amountOfProxies = 3;
+const amountOfProxies = 5;
 
 //Shuffle the proxies
 proxies = shuffleArray(proxies);
 //some random things to put in the header
 let someFunnyHeader = 'Studyportals Engineers 4 life';
 let githubUrl = 'https://github.com/studyportals/TechOpenAirHacky';
+let careerWebsite = 'https://www.studyportals.com/careers/';
+let facebookWebsite = 'https://www.facebook.com/studyportalscareers/';
 //some variables of Tech open Air
 
 let dt50Url = 'http://toa.berlin/dt50/#';
@@ -139,7 +141,9 @@ function doVote(nonce, proxyUrl) {
         headers: {
             'user-agent': someFunnyHeader,
             'Content-Type': 'multipart/form-data',
-            'DontLookHeader': githubUrl
+            'DontLookHeader': githubUrl,
+            'ApplyHere': careerWebsite,
+            'OrHere': facebookWebsite
         },
         uri: dt50PostUrl,
         form: {
