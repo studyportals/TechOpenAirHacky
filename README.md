@@ -1,12 +1,3 @@
-
-Make sure you change the spId in run.js to the right id of the company you want to upvote. 
-
-Also, change your proxies so you can vote UNLIMITED TIMES!!! OMG YES!!!!
-
-You can find the id in the dom of the page. 
-
-
-
 # Hacking tech open air
 
 So you want to get some free upvotes to win the Tech open Air, just before the deadline?
