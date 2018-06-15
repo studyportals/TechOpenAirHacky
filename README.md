@@ -1,14 +1,9 @@
-#TicketSwag
+#Hacking tech open air
 
-make sure you have Node and Git installed. 
+So you wan't to hack the Tech open Air? 
 
-node: https://nodejs.org/en/download/
+Just download this code, run npm install, and run npm start run.js 
 
-git : https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+Make sure you change the spId in run.js to the right id of the company you want to upvote. 
 
-To use this project, first clone it and run npm install inside the folder.
-
-After this open a console inside the folder and type 'npm start', hit enter
-sit back and relax.
-
-HAVE FUN!!!!
+Yo ucan find the id in the dom of the page. 
